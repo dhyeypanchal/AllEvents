@@ -33,11 +33,11 @@ function DisplayEventItem({ eventUrl }) {
             </div>
             {event.map((item, index) => {
                 return (
-                    <div key={index}>
+                    <div className='view' key={index}>
                         {click ? <List key={index} id={index} eventName={item.eventname} thumbUrl={item.thumb_url} eventDate={item.label} address={item.venue.full_address} /> : <Grid key={index} id={index} eventName={item.eventname} thumbUrl={item.thumb_url} eventDate={item.label} address={item.venue.full_address} />}
                     </div>
                 );
-            })};
+            })}
         </div>
     );
 };

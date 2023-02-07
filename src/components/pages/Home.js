@@ -18,12 +18,17 @@ function Home() {
     }, []);
 
     return (
-        <div className='flex'>
-            {category.map((item, index) => {
-                return (
-                    <Menu key={index} items={item.category} />
-                );
-            })}
+        <div>
+            <div style={{ marginLeft: "85px", marginRight: "85px" }}><h1 className='homeHeading'>Tap Below To See Particular Category Of Events</h1></div>      
+            <div className='flex'>    
+                    {category.map((item, index) => {
+                        return (
+                            <div key={index}>
+                                <Menu key={index} items={item.category} />
+                            </div>
+                        );
+                    })}
+                </div>
         </div>
     )
 }

@@ -5,6 +5,8 @@
 * {
     font-family: 'Varela Round', sans-serif;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,6 +19,7 @@ body::-webkit-scrollbar {
 
 
 /* for navbar and homecard */
+
 .nav {
     text-decoration: none;
     color: white !important;
@@ -34,28 +37,50 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
+.home{
+    color: black;
+    text-decoration: none;
+}
+.home:hover{
+    color: rgba(69, 69, 72, 0.6);
+}
+.homeHeading{
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.view {
+    margin: 15px;
+}
+
 /* List */
 .list {
-    justify-content: center;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .listContainer {
-    margin-top: 1rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    background-color: rgba(136, 217, 231, 0.1);
     padding: 2rem;
-    box-shadow: 0px 0px 4px rgb(2, 2, 2);
+    box-shadow: 0px 0px 5px rgb(2, 2, 2);
+    border-radius: 10px;
 }
 
 .listContainer img {
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 /* Grid */
 .grid-container {
-    margin-top: 1rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    background-color: rgba(136, 217, 231, 0.1);
     text-align: center;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
 
 .row {
@@ -68,18 +93,21 @@ body::-webkit-scrollbar {
 
 /* Button */
 .toggleButtons {
-    margin-top: 1rem;
+    position: relative;
+    top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 button {
-    font-size: 20px;
-    width: 86%;
+    font-size: 1.5rem;
+    width: 86.2%;
+    max-width: 1330px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(136, 217, 231, 0.1);
 }
